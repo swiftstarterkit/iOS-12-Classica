@@ -18,7 +18,7 @@
 		7A4E4E1C24DB1FE9000D3C39 /* 1812 Overture.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4E4E1924DB1FE9000D3C39 /* 1812 Overture.mp3 */; };
 		7A4E4E1E24DB2076000D3C39 /* Ride of the Valkyries.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4E4E1D24DB2076000D3C39 /* Ride of the Valkyries.mp3 */; };
 		7A4E4E2024DB22A2000D3C39 /* ClassicaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E4E1F24DB22A2000D3C39 /* ClassicaModel.swift */; };
-		7A4E4E2624DB6398000D3C39 /* ScaleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E4E2524DB6398000D3C39 /* ScaleButtonStyle.swift */; };
+		7A4E4E3124DB71D3000D3C39 /* ScaleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E4E3024DB71D3000D3C39 /* ScaleButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		7A4E4E1924DB1FE9000D3C39 /* 1812 Overture.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1812 Overture.mp3"; sourceTree = "<group>"; };
 		7A4E4E1D24DB2076000D3C39 /* Ride of the Valkyries.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ride of the Valkyries.mp3"; sourceTree = "<group>"; };
 		7A4E4E1F24DB22A2000D3C39 /* ClassicaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicaModel.swift; sourceTree = "<group>"; };
-		7A4E4E2524DB6398000D3C39 /* ScaleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleButtonStyle.swift; sourceTree = "<group>"; };
+		7A4E4E3024DB71D3000D3C39 /* ScaleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +71,7 @@
 				7A4E4DFD24DB1A08000D3C39 /* ClassicaApp.swift */,
 				7A4E4E0C24DB1A69000D3C39 /* Models */,
 				7A4E4E0D24DB1A6D000D3C39 /* Views */,
+				7A4E4E2F24DB71AC000D3C39 /* Styles */,
 				7A4E4E1624DB1FAB000D3C39 /* Songs */,
 				7A4E4E0124DB1A0A000D3C39 /* Assets.xcassets */,
 				7A4E4E0624DB1A0A000D3C39 /* Info.plist */,
@@ -101,7 +102,6 @@
 				7A4E4DFF24DB1A08000D3C39 /* ContentView.swift */,
 				7A4E4E0E24DB1AB7000D3C39 /* SongCard.swift */,
 				7A4E4E1024DB1AE7000D3C39 /* SongInfo.swift */,
-				7A4E4E2524DB6398000D3C39 /* ScaleButtonStyle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +115,14 @@
 				7A4E4E1724DB1FE9000D3C39 /* Waltz of the Flowers.mp3 */,
 			);
 			path = Songs;
+			sourceTree = "<group>";
+		};
+		7A4E4E2F24DB71AC000D3C39 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				7A4E4E3024DB71D3000D3C39 /* ScaleButtonStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A4E4E3124DB71D3000D3C39 /* ScaleButtonStyle.swift in Sources */,
 				7A4E4E1124DB1AE7000D3C39 /* SongInfo.swift in Sources */,
 				7A4E4E2024DB22A2000D3C39 /* ClassicaModel.swift in Sources */,
 				7A4E4E0F24DB1AB7000D3C39 /* SongCard.swift in Sources */,
-				7A4E4E2624DB6398000D3C39 /* ScaleButtonStyle.swift in Sources */,
 				7A4E4E0024DB1A08000D3C39 /* ContentView.swift in Sources */,
 				7A4E4DFE24DB1A08000D3C39 /* ClassicaApp.swift in Sources */,
 			);

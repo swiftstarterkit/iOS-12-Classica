@@ -1,13 +1,9 @@
-# Index
+# Classica
 ##### Swift Starter Kit Course
 
-This repository contains the completed project and the correct code for the *Index* superior challenger app from the official [Swift Starter Kit: iOS Development in iOS 14 with SwiftUI](https://www.udemy.com/course/3270668/) online course (Section 10 App).
+This repository contains the completed project and the correct code for the *Classica* challenger app from the official [iOS 14, Swift 5 & SwiftUI - The iOS Development Starter KitI](https://www.udemy.com/course/swift-starter-kit) online course (Section 12 App).
 
 <br>
 
-### Metric Selection
-<img src="Project Resources/AppComplete_Index_Metric.gif" width="400"/>
-
-### Imperial Selection
-<img src="Project Resources/AppComplete_Index_Imperial.gif" width="400"/>
+<img src="Project Resources/AppComplete_Classica.gif" width="400"/>
 
