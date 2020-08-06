@@ -14,17 +14,12 @@ struct SongCard: View {
     let title: String
     let composer: String
     let image: String
-    
-    let width: CGFloat = 300
-    let height: CGFloat = 300
-    let cornerRadius: CGFloat = 20
-    
-    @State var isTapped: Bool = false
+    let type: String
     
     var body: some View {
         
         Button(action: {
-            self.model.loadMusic(fileName: title, fileType: "mp3")
+            self.model.loadMusic(fileName: title, fileType: type)
             self.model.playMusic()
         }) {
             ZStack {
@@ -32,7 +27,6 @@ struct SongCard: View {
                 Image(image)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: width, height: height)
                 
                 VStack {
                     
@@ -42,10 +36,10 @@ struct SongCard: View {
                     }
                     Spacer()
                     
-                }   .frame(width: width, height: height)
+                }
                 
-            }   .frame(width: width, height: height)
-                .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+            }   .frame(width: 300, height: 300)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
         }       .buttonStyle(ScaleButtonStyle())
     }
 }

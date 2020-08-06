@@ -19,10 +19,10 @@ struct ContentView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                    HStack(spacing: 30) {
                         
-                        SongCard(title: "Waltz of the Flowers", composer: "Tchaikovsky", image: "childhood")
-                        SongCard(title: "1812 Overture", composer: "Tchaikovsky", image: "youth")
-                        SongCard(title: "Ride of the Valkyries", composer: "Wagner", image: "manhood")
-                        SongCard(title: "9th Symphony (Finale)", composer: "Beethoven", image: "oldage")
+                    SongCard(title: "Waltz of the Flowers", composer: "Tchaikovsky", image: "childhood", type: "mp3")
+                    SongCard(title: "1812 Overture", composer: "Tchaikovsky", image: "youth", type: "mp3")
+                    SongCard(title: "Ride of the Valkyries", composer: "Wagner", image: "manhood", type: "mp3")
+                    SongCard(title: "9th Symphony (Finale)", composer: "Beethoven", image: "oldage", type: "mp3")
                         
                     }   .padding(.all, 30)
                 }
