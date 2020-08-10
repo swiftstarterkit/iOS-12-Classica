@@ -19,8 +19,7 @@ struct SongCard: View {
     var body: some View {
         
         Button(action: {
-            self.model.loadMusic(fileName: title, fileType: type)
-            self.model.playMusic()
+            self.model.loadAndPlay(song: title, fileType: type)
         }) {
             ZStack {
                 

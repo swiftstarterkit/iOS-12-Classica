@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AVFoundation
+import AVKit
 
 class ClassicaModel: ObservableObject {
     
@@ -15,22 +15,23 @@ class ClassicaModel: ObservableObject {
     func loadMusic(fileName: String, fileType: String) {
         
         if let filePath = Bundle.main.path(forResource: fileName, ofType: fileType) {
+            let fileURL = URL(fileURLWithPath: filePath)
             do {
-                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: filePath))
+                audioPlayer = try AVAudioPlayer(contentsOf: fileURL)
             } catch {
-                print(error.localizedDescription)
+                print("Error: File not found.")
             }
         }
-    }
-    
-    func playMusic() {
-        audioPlayer?.play()
-        audioPlayer?.numberOfLoops = 0
     }
     
     func loadAndPlay(song: String, fileType: String) {
         self.loadMusic(fileName: song, fileType: fileType)
         self.playMusic()
+    }
+    
+    func playMusic() {
+        audioPlayer?.play()
+        audioPlayer?.numberOfLoops = 0
     }
     
     func pauseMusic() {
